@@ -1,0 +1,4 @@
+Student name: Nikos Stergioulas
+Student number: 690956
+Student Class: it1d
+URL GitHub repository: https://github.com/StergioulasNikos/webmarkupassessment.git
