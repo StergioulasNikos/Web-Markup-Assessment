@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="Css/style.css" />
     <title>Home</title>
   </head>
-  <body>
+  <body class="flexbox">
     <header>
-      <h1 class="title">Umbrella Travels</h1>
-      <h2 class="payoff">Everyday is summer!</h2>
+      <img class="logo" src="Images/logo.svg" alt="Website Logo" />
+      <h1 class="title">Sunset Travels</h1>
+      <h2 class="payoff">The sun never goes down!</h2>
     </header>
     <nav class="main-nav">
       <ul>
@@ -23,15 +24,17 @@
 
     <section class="index-articles">
       <article id="article01">
-        <header>
-          <h1>Paris, France</h1>
+        <h1>Paris, France</h1>
+        <figure>
           <img
             src="Images/paris.jpg"
             alt="Eiffel Tower with cherry blossoms"
             class="indexpicture"
           />
-        </header>
-        <p>
+          <figcaption>The Eiffel tower</figcaption>
+          <footer><small>iStock</small></footer>
+        </figure>
+        <p class="text">
           The magnetic City of Light draws visitors from around the globe who
           come to see iconic attractions like the Eiffel Tower, the Louvre and
           the Arc de Triomphe. But what travelers really fall in love with are
@@ -42,18 +45,19 @@
           15 miles southwest of the city center to another must-see attraction:
           the Palace of Versailles.
         </p>
-        <footer><small>iStock</small></footer>
       </article>
       <article id="article02">
-        <header>
-          <h1>South Island, New Zealand</h1>
+        <h1>South Island, New Zealand</h1>
+        <figure>
           <img
             src="Images/south_island.jpg"
             alt="Road by the sea"
             class="indexpicture"
           />
-        </header>
-        <p>
+          <figcaption>Road by the sea</figcaption>
+          <footer><small>Outside Magazine</small></footer>
+        </figure>
+        <p class="text">
           New Zealand's South Island brims with majestic landscapes at every
           turn, from dramatic mountains to fjords to glaciers. Here, you can
           admire the mountains of Fiordland National Park, a UNESCO World
@@ -64,18 +68,19 @@
           glaciers in the world on the island's west coast or sample delicious
           food and wine in the Marlborough region.
         </p>
-        <footer><small>Outside Magazine</small></footer>
       </article>
       <article id="article03">
-        <header>
-          <h1>Bora Bora, French Polynesia</h1>
+        <h1>Bora Bora, French Polynesia</h1>
+        <figure>
           <img
             src="Images/bora_bora.jpg"
             alt="Huts by the sea"
             class="indexpicture"
           />
-        </header>
-        <p>
+          <figcaption>Huts on the sea</figcaption>
+          <footer><small>Tripadvisor</small></footer>
+        </figure>
+        <p class="text">
           What this small French Polynesian island may lack in size it makes up
           for in sheer tropical beauty. Here, you'll find picturesque beaches,
           lush jungles and luxurious resorts. The island's dormant volcano,
@@ -85,7 +90,6 @@
           Beach for crystal-clear water and soft sand. Although a trip to Bora
           Bora is very expensive, most travelers say it's worth every penny.
         </p>
-        <footer><small>Tripadvisor</small></footer>
       </article>
     </section>
 
@@ -117,6 +121,8 @@
         </p>
       </ol>
     </aside>
-    <footer><small>&copy;Stergioulas Nikos 2021</small></footer>
+    <footer class="endfooter">
+      <small>&copy;Stergioulas Nikos 2021</small>
+    </footer>
   </body>
 </html>
