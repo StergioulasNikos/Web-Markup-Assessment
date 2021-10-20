@@ -1,18 +1,21 @@
-.flexbox {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 10px;
-}
-.flexbox > * {
-  flex: 1 100%;
-}
 header {
-  padding: 10px;
-  background-color: #8ff;
+  background-color: #f8f;
 }
 nav {
+  background-color: aquamarine;
+}
+.index-articles {
+  background-color: blueviolet;
+}
+aside {
+  background-color: chartreuse;
+}
+footer {
+  background-color: cornflowerblue;
+}
+
+nav {
   padding: 10px;
-  background-color: #f8f;
 }
 nav > ul {
   list-style-type: none;
@@ -21,33 +24,10 @@ nav > ul > li {
   display: inline;
   font-size: 25px;
 }
-
 .indexpicture {
+  height: 250px;
   width: 500px;
-  height: 350px;
 }
-aside {
-  max-width: 20%;
-  background-color: #88f;
-}
-.text {
-  text-align: justify;
-}
-.endfooter {
-  background-color: #f88;
-}
-aside p {
-  font-size: 12px;
-}
-.index-articles {
-  max-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.index-articles > * {
-  flex: 1 1 100%;
-}
-
 figcaption {
   background-color: #222;
   color: #fff;
@@ -62,4 +42,39 @@ figure {
 .logo {
   max-width: 100px;
   max-height: 100px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.index-articles {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 80%;
+}
+header {
+  flex: 1 1 100%;
+}
+.aside-right {
+  flex: 0 0 20%;
+  float: right;
+}
+.main-nav {
+  flex: 1 1 100%;
+}
+.promo-video {
+  flex: 1;
+}
+.cookie {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  order: 2;
+  color: #fff;
+  border: solid;
+  background-color: #fa0;
+  opacity: 50%;
+  z-index: 9999;
 }
