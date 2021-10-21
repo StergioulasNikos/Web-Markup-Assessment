@@ -1,3 +1,4 @@
+/* General Css */
 
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
@@ -16,103 +17,206 @@ aside {
 footer {
   background-color: cornflowerblue;
 }
-
+.bd-articles{
+  background-color: blueviolet;
+}
+.logo{
+  height: 100px;
+  padding-left: 20px;
+}
 body
 {
 font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+font-size: 16px;
+}
+header h1{
+  font-size: 32px;
+  letter-spacing: 3px;
+  padding-left: 20px;
+}
+header h2{
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding-left: 20px;
+}
+footer{
+  text-align: right;
+}
+article h1{
+  text-align: center;
+  font-family: Notable, Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
 
 }
+nav{
+  padding: 10px;
+}
+nav >ul {
+  list-style: none;
+  text-align: center;
+}
+nav>ul>li{
+  display: inline-block;
+  padding-left: 25px;
+  font-family: Notable, sans-serif;
+  letter-spacing: 2px;
+}
+nav>ul>li>a{
+  text-decoration: none;
+}
+nav>ul>li>a:hover{
+  transition: all 0.03s ease 0s;
+  text-shadow: 4px 4px 8px orangered;
+  color: orangered;
+}
+
 header{
   font-family: Notable, sans-serif;
   text-transform: uppercase;
-  line-height: 1.6;
+  
 }
-.title{
-  letter-spacing: 3px;
-  font-size: 30px;
-}
-.payoff{
-  font-size: 20px;
-  letter-spacing: 3px;
-}
-
-nav {
-  padding: 10px;
-}
-nav > ul {
-  list-style-type: none;
-}
-nav > ul > li {
-  justify-content: center;
-  display: inline-block;
-  padding-left: 10%;
-  font-size: 20px;
-  font-family: Notable, sans-serif;
-}
-nav > ul > li > a{
-  text-decoration: none;  
-}
-
-nav > ul > li > a:hover{
-  transition: all 0.3s ease 0s;
-  color: orangered;
-}
-.indexpicture {
-  height: 250px;
-  width: 500px;
-}
-figcaption {
-  background-color: #222;
+.index-cookie {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  order: 2;
   color: #fff;
+  border: solid;
+  background-color: #fa0;
+  opacity: 50%;
+  z-index: 9999;
+}
+article{
+  padding: 5px;
+  border: solid;
+}
+article p {
+  text-indent: 20px;
+  
+}
+figcaption{
   text-align: center;
 }
-figure {
-  float: right;
-  display: flex;
-  padding: 5px;
-  flex-flow: column;
+
+/*Index Css*/
+.indexpicture{
+  width: 500px;
+  height: 250px;
 }
-.logo {
-  max-width: 100px;
-  max-height: 100px;
+figure{
+  float: right;
 }
 
-.main-container {
+.index-container{
   display: flex;
   flex-wrap: wrap;
 }
-
-.index-articles {
+.index-header{
+  flex: 1 1 100%;
+}
+.index-nav{
+  flex: 1 1 100%;
+}
+.index-video{
+  flex: 1;
+  padding-left: 15%;
+}
+.index-articles{
+  width: 80%;
   display: flex;
   flex-direction: column;
-  flex: 0 0 80%;
-
-  line-height: 1.6;
+  flex: 1 1 80%
 }
-.index-articles>article>h1 {
-  font-family: Notable, sans-serif;
-  letter-spacing: 3px;
-}
-.index-articles>article>p{
-  text-indent: 1em;
-  word-spacing: 2px;
-}
-header {
-  flex: 1 1 100%;
-}
-.aside-right {
+.index-aside{
   flex: 0 0 20%;
   float: right;
+  width: 20%;
+  
 }
-.main-nav {
-  flex: 1 1 100%;
+.index-footer{
+  flex: 1 1 80%;
 }
-.promo-video {
-  padding-left: 15%;
-  padding-right: 15%;
-  flex: 1;
+.index-cookie{
+  flex: 1 1 20%;
 }
-.cookie {
+.index-aside-list>li{
+font-family: Notable,Arial, Helvetica, sans-serif;
+}
+/* Best Destinations CSS */
+
+.bd-image{
+  height: 250px;
+  width: 550px;
+}
+#article04{
+  grid-area: art04;
+}
+#article05{
+  grid-area: art05;
+}
+#article06{
+  grid-area: art06;
+}
+#article07{
+  grid-area: art07;
+}
+#article08{
+  grid-area: art08;
+}
+#article09{
+  grid-area: art09;
+}
+.bd-header{
+  grid-area: header;
+}
+.bd-nav{
+  grid-area: nav;
+}
+.bd-articles{
+  grid-area: main;
+  display: grid;
+  grid-template-areas: 
+  'art05 art04 art06'
+  'art05 art04 art06'
+  'art08 art04 art06'
+  'art08 art04 art07'
+  'art08 art04 art07'
+  'art08 art01 art07'
+  'art08 art09 art09'
+
+}
+.bd-figure01{
+  grid-area: fig01;
+}
+.bd-figure02{
+  grid-area: fig02;
+}
+.bd-figure03{
+  grid-area: fig03;
+}
+.bd-aside{
+  display: grid;
+  grid-template-areas: 'fig01 fig02 fig03';
+  grid-area: aside;
+}
+.bd-cookie{
+  grid-area: cookie;
+}
+.bd-footer{
+  grid-area: footer;
+}
+.bd-container{
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'nav nav nav'
+  'main main main'
+  'main main main'
+  'aside aside aside'
+  'footer footer cookie'
+}
+.bd-cookie{
   position: fixed;
   right: 10px;
   bottom: 10px;
