@@ -17,17 +17,31 @@
         <h1 class="title">Sunset Travels</h1>
         <h2 class="payoff">The sun never goes down &excl;</h2>
       </header>
-      <nav class="index-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bestdestinations.html">Best Destinations</a></li>
-          <li><a href="tickets.html">Tickets</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <!-- Hamburger Menu-->
+      <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger">
+        <section id="hamitems">
+          <a href="index.html">Home</a>
+          <a href="bestdestinations.html">Best Destinations</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="contact.html">Contact Us</a>
+        </section>
+      </nav>
+
+
+
+      <nav class="index-nav">        
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bestdestinations.html">Best Destinations</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>        
       </nav>
       <section class="index-video">
         <video muted>
-          <source src="Videos/Let's Go - Egypt.mp4" type="video/mp4" />
+          <source src="Videos/Let_s-Go-Egypt.mp4" type="video/mp4" />
           <source src="Videos/Let_s-Go-Egypt.ogg" type="video/ogg" />
           Your browser does not support this video format.
         </video>
@@ -41,8 +55,7 @@
               alt="Eiffel Tower with cherry blossoms"
               class="indexpicture"
             />
-            <figcaption>The Eiffel tower</figcaption>
-            <footer><small>iStock</small></footer>
+            <figcaption><small>iStock</small></figcaption>            
           </figure>
           <p>
             The magnetic <em>City of Light</em> draws visitors from around the globe who come to see iconic attractions like the <em>Eiffel Tower</em>, the <em>Louvre</em> and the <em>Arc de Triomphe</em>. But what travelers really fall in love with are the city's quaint cafes, vibrant markets, trendy shopping districts
@@ -61,8 +74,7 @@
               alt="Road by the sea"
               class="indexpicture"
             />
-            <figcaption>Road by the sea</figcaption>
-            <footer><small>Outside Magazine</small></footer>
+            <figcaption><small>Outside Magazine</small></figcaption>            
           </figure>
           <p>
             New Zealand's South Island brims with majestic landscapes at every
@@ -85,9 +97,8 @@
               src="Images/bora_bora.jpg"
               alt="Huts by the sea"
               class="indexpicture"
-            />
-            <figcaption>Huts on the sea</figcaption>
-            <footer><small>Tripadvisor</small></footer>
+            />            
+            <figcaption><small>Tripadvisor</small></figcaption>                     
           </figure>
           <p>
             What this small French Polynesian island may lack in size it makes
@@ -103,35 +114,21 @@
         </article>
       </section>
       <aside class="index-aside">
-        <ol class="index-aside-list">
-          <li>Bali, Indonesia</li>
-          <p>
-            You'll find beaches, volcanoes, Komodo dragons and jungles
-            sheltering elephants.
-          </p>
-          <li>New Orleans</li>
-          <p>
-            The lively city known for its street music, festive vibe and a
-            melting pot of cultures.
-          </p>
-          <li>Kerry, Ireland</li>
-          <p>
-            All the way west in Ireland is one of the country's most scenic
-            counties.
-          </p>
-          <li>Marrakesh, Marocoo</li>
-          <p>
-            This ancient walled city is home to mosques, palaces and lush
-            gardens.
-          </p>
-          <li>Sydney</li>
-          <p>
-            Sydney is known around the world as one of the greatest and most
-            iconic cities on the planet.
-          </p>
+        <ol type="1" class="index-aside-list">
+          <li><h4>Bali, Indonesia</h4></li>    
+              You'll find beaches, volcanoes, Komodo dragons and jungles
+              sheltering elephants.                    
+          <li><h4>New Orleans</h4></li>          
+              The lively city known for its street music, festive vibe and a melting pot of cultures.          
+          <li><h4>Kerry, Ireland</h4></li>          
+             All the way west in Ireland is one of the country's most scenic counties.          
+          <li><h4>Marrakesh, Marocoo</h4></li>          
+              This ancient walled city is home to mosques, palaces and lush gardens.          
+          <li><h4>Sydney</h4></li>          
+              Sydney is known around the world as one of the greatest and most iconic cities on the planet.          
         </ol>
       </aside>
-      <object class="index-cookie">Cookie Statement</object>
+      <p class="index-cookie">Cookie Statement</p>
       <footer class="index-footer">
         <small>&copy;Stergioulas Nikos 2021</small>
       </footer>

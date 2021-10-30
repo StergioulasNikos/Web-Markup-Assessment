@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Are you planning a trip? Sunset travels is here for you! With a plethora of destinations to pick from, we offer the best prices in the market. We promise you that we will make your vacation unforgetable. Book now with us and let us plan for you, your next trip.">
+    <meta name="keywords" content="Travel, Vacation, Tickets, Destinations, Summer">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="icon" href="Images/logo.svg" type="image/x-icon">
     <title>Contact Us</title>
@@ -15,6 +17,17 @@
           <h1 class="title">Sunset Travels</h1>
           <h2 class="payoff">The sun never goes down &excl;</h2>
         </header>
+        <!-- Hamburger Menu-->
+      <nav id="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger">
+        <section id="hamitems">
+          <a href="index.html">Home</a>
+          <a href="bestdestinations.html">Best Destinations</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="contact.html">Contact Us</a>
+        </section>
+      </nav>
       <nav class="contact-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -28,19 +41,19 @@
               <legend>Contact Us</legend>
               <section class="contact-form">
                 <label for="firstName">First name</label>
-                <input type="text" name="firstName">
+                <input id="firstName" type="text" name="firstName">
               </section>
               <section class="contact-form">
                 <label for="lastName">Last name</label>
-                <input type="text" name="lastName">
+                <input id="lastName" type="text" name="lastName">
               </section>
               <section class="contact-form">
                 <label for="email">Email</label>
-                <input type="email" name="email">
+                <input id="email" type="email" name="email">
               </section>
               <section class="contact-form">
                 <label for="text">Your Message</label>
-                <textarea name="message" cols="30" rows="10"></textarea>
+                <textarea id="text" name="message" cols="30" rows="10"></textarea>
               </section>
               <section class="contact-form">
                 <input type="submit" value="Submit">
@@ -55,8 +68,8 @@
                   alt="Barcelona"
                 />
               </a>
-              <figcaption>Barcelona City Blocks</figcaption>
-              <footer><small>iStock</small></footer>
+              <figcaption><small>iStock</small></figcaption>
+              
             </figure>
             <figure class="contact-figure02">
               <a href="https://www.tui.nl/">
@@ -65,8 +78,8 @@
                   alt="New York City"
                 />
               </a>
-              <figcaption>New York city</figcaption>
-              <footer><small>Architectural Digest</small></footer>
+              <figcaption><small>Architectural Digest</small></figcaption>
+              
             </figure>
             <figure class="contact-figure03">
               <a href="https://www.tui.nl/">
@@ -75,11 +88,11 @@
                   alt="Dubai skyscrapers"
                 />
               </a>
-              <figcaption>Dubai skyscrapers</figcaption>
-              <footer><small>RTL nieuws</small></footer>
+              <figcaption><small>RTL nieuws</small></figcaption>
+              
             </figure>
       </aside>
-      <object class="contact-cookie">Cookie Statement</object>
+      <p class="contact-cookie">Cookie Statement</p>
       <footer class="contact-footer">
           <small>&copy;Stergioulas Nikos 2021</small>
       </footer>
