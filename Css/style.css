@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
-
+em{
+  font-style: italic;
+  font-weight: 500;
+}
 .logo{
   height: 100px;
   padding-left: 20px;
@@ -233,9 +236,7 @@ letter-spacing: 2px;
   display: grid;
   grid-template-areas: 'fig01 fig02 fig03';
   grid-area: aside;
-  background-color: #15b2d3;
-  border: 2px solid #f3872f;
-  border-radius: 15px;
+ 
 
 }
 .bd-cookie{
@@ -300,12 +301,7 @@ flex-wrap: wrap;
     opacity: 50%;
     z-index: 9999;
 }
-.tickets-aside{
-  background-color: #15b2d3;
-  border: 2px solid #f3872f;
-  border-radius: 15px;
-  margin-bottom: 30px;
-}
+
 .tickets-image{
   width: 500px;
   height: 250px;
@@ -333,5 +329,92 @@ tfoot{
 
 
 /* Contact Css */
-
-
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-header{
+  flex: 1 1 100%;
+}
+.contact-nav{
+  flex: 1 1 100%;
+}
+.contact-aside{
+  width: 30%;
+}
+form.contact-form{
+  width: 70%;
+  flex: 1 1 70%;
+}
+.contact-aside>figure{
+  width: 500px;
+}
+.contact-image{
+  width: 500px;
+  height: 250px;
+}
+.contact-cookie{
+  position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border: solid;
+    background-color: #fa0;
+    opacity: 50%;
+    z-index: 9999;
+}
+input[type=text],input[type=email]{
+  display: inline-block;
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+textarea{
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: none;
+}
+input[type=submit]{
+  width: 100%;
+  height: 50px;
+  background-color:#15b2d3;
+  border: solid;
+  border-radius: 15px;
+  color: #f3872f;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contact-form{
+  margin: 0.3rem auto;
+}
+label{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f3872f;
+  
+}
+legend{
+  font-size: 18px;
+  color: #f3872f;
+  font-weight: 800;
+}
+fieldset{
+  border: double #f3872f;
+  border-width: 5px;
+}
+.contact-aside>figure{
+  border: 3px dotted #f3872f;
+}
+input[type=text]:focus,input[type=email]:focus{
+  background-color: #BAFDFF;
+}

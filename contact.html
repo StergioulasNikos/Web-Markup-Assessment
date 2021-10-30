@@ -4,65 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="Images/logo.svg" type="image/x-icon">
     <title>Contact Us</title>
 </head>
 <body>
-    <header class="contact-header">
-        <img class="logo" src="Images/logo.svg" alt="Website Logo" />
-        <h1 class="title">Sunset Travels</h1>
-        <h2 class="payoff">The sun never goes down &excl;</h2>
-      </header>
-    <nav class="contact-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="bestdestinations.html">Best Destinations</a></li>
-          <li><a href="tickets.html">Tickets</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <form class="contact-form">
-        <fieldset>
-            <legend>Contact Us</legend>
-            <label for="firstName">First name</label>
-            <input type="text" name="firstName">
-            <label for="lastName">Last name</label>
-            <input type="text" name="lastName">
-            <label for="email">Email</label>
-            <input type="email" name="email">
-            <label for="text">Your Message</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
-        </fieldset>
-    </form>
-    <aside class="contact-aside">
-        <figure class="contact-figure01">
-            <img class="contact-image"
-              src="Images/barcelona.jpg"
-              alt="Barcelona"
-            />
-            <figcaption>Barcelona City Blocks</figcaption>
-            <footer><small>iStock</small></footer>
-          </figure>
-          <figure class="contact-figure02">
-            <img class="contact-image"
-              src="Images/new-york.jpg"
-              alt="New York City"
-            />
-            <figcaption>New York city</figcaption>
-            <footer><small>Architectural Digest</small></footer>
-          </figure>
-          <figure class="contact-figure03">
-            <img class="contact-image"
-              src="Images/dubai.jpg"
-              alt="Dubai skyscrapers"
-            />
-            <figcaption>Dubai skyscrapers</figcaption>
-            <footer><small>RTL nieuws</small></footer>
-          </figure>
-    </aside>
-    <object class="contact-cookie">Cookie Statement</object>
-    <footer class="contact-footer">
-        <small>&copy;Stergioulas Nikos 2021</small>
-    </footer>    
+    <section class="contact-container">
+      <header class="contact-header">
+          <img class="logo" src="Images/logo.svg" alt="Website Logo" />
+          <h1 class="title">Sunset Travels</h1>
+          <h2 class="payoff">The sun never goes down &excl;</h2>
+        </header>
+      <nav class="contact-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bestdestinations.html">Best Destinations</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+      </nav>
+      <form class="contact-form">
+          <fieldset>
+              <legend>Contact Us</legend>
+              <section class="contact-form">
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName">
+              </section>
+              <section class="contact-form">
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName">
+              </section>
+              <section class="contact-form">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+              </section>
+              <section class="contact-form">
+                <label for="text">Your Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+              </section>
+              <section class="contact-form">
+                <input type="submit" value="Submit">
+              </section>
+          </fieldset>
+      </form>
+      <aside class="contact-aside">
+          <figure class="contact-figure01">
+              <a href="https://www.tui.nl/">
+                <img class="contact-image"
+                  src="Images/barcelona.jpg"
+                  alt="Barcelona"
+                />
+              </a>
+              <figcaption>Barcelona City Blocks</figcaption>
+              <footer><small>iStock</small></footer>
+            </figure>
+            <figure class="contact-figure02">
+              <a href="https://www.tui.nl/">
+                <img class="contact-image"
+                  src="Images/new-york.jpg"
+                  alt="New York City"
+                />
+              </a>
+              <figcaption>New York city</figcaption>
+              <footer><small>Architectural Digest</small></footer>
+            </figure>
+            <figure class="contact-figure03">
+              <a href="https://www.tui.nl/">
+                <img class="contact-image"
+                  src="Images/dubai.jpg"
+                  alt="Dubai skyscrapers"
+                />
+              </a>
+              <figcaption>Dubai skyscrapers</figcaption>
+              <footer><small>RTL nieuws</small></footer>
+            </figure>
+      </aside>
+      <object class="contact-cookie">Cookie Statement</object>
+      <footer class="contact-footer">
+          <small>&copy;Stergioulas Nikos 2021</small>
+      </footer>
+    </section>
 </body>
 </html>
