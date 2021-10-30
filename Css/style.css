@@ -264,6 +264,12 @@ letter-spacing: 2px;
     width: 100%;
     box-sizing: border-box;
   }
+  #hamitems a:hover{
+    transition: all 0.03s ease 0s;
+    text-shadow: 4px 4px 8px #f3872f;
+    color: #f3872f;
+
+  }
   #hamnav label {
     position: absolute;
     top: 75px;
@@ -506,16 +512,29 @@ flex-wrap: wrap;
 }
 .tickets-header{
   flex: 1 1 100%;
+  order: 1;
 }
-.tickets-nav{
+.tickets-nav, #hamnav{
   flex: 1 100%;
+  order: 2;
+}
+.tickets-article{
+  text-align: center;
+  flex: 1 1 100%;
+  order: 3;
 }
 .tickets-table{
   flex: 1 ;
+  order: 4;
 }
 .tickets-footer{
   text-align: left;
   flex: 1 1 80%;
+  order: 6;
+}
+.tickets-aside{
+  flex: 0 1 20%;
+  order: 5;
 }
 .tickets-cookie{
     position: fixed;
@@ -531,8 +550,8 @@ flex-wrap: wrap;
 }
 
 .tickets-image{
-  width: 500px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
 }
 .table-body{
   text-align: center;
@@ -555,7 +574,53 @@ tfoot{
   border: 3px dotted #f3872f;
 }
 
+@media screen and (max-width:1179px) {
+  .tickets-header{
+    flex: 1 1 100%;
+  }
+  .tickets-nav{
+    flex: 1 1 100%;
+  }
+  .tickets-article{
+    flex: 1 1 100%;
+  }
+  .tickets-table{
+    flex: 1 1 100%;
+  }
+  .tickets-figure01{
+    display: none;
+  }
+  .tickets-aside{
+    flex: 1 1 100%;
+    display: flex;
+  }
+  .tickets-figure02{
+    flex: 0 1 50%;
+  }
+  .tickets-figure03{
+    flex: 0 1 50%;
+  }
 
+  
+}
+@media screen and (max-width: 480px) {
+  
+  .tickets-nav{
+    display: none;
+  }
+  .tickets-aside{
+    display: flex;
+    flex-direction: column;
+  }
+  .tickets-figure01{
+    display: initial;
+  }
+  
+  .tickets-header{
+    flex: 0 1 70%;
+  }
+  
+}
   
 
 /* Contact Css */
@@ -565,23 +630,30 @@ tfoot{
 }
 .contact-header{
   flex: 1 1 100%;
+  order: 1;
 }
-.contact-nav{
+.contact-nav, #hamnav{
   flex: 1 1 100%;
+  order: 2;
 }
 .contact-aside{
-  width: 30%;
+  flex: 1 1 30%;
+  order: 4;
 }
 form.contact-form{
-  width: 70%;
+  
   flex: 1 1 70%;
+  order: 3;
 }
-.contact-aside>figure{
-  width: 500px;
+.contact-footer{
+  text-align: left;
+  flex: 1 1 100%;
+  order: 6;
 }
+
 .contact-image{
-  width: 500px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
 }
 .contact-cookie{
   position: fixed;
@@ -647,4 +719,31 @@ fieldset{
 }
 input[type=text]:focus,input[type=email]:focus{
   background-color: #BAFDFF;
+}
+
+@media screen and (max-width:1179px) {
+
+  .contact-header{
+    flex: 1 1 100%;
+  }
+  .contact-nav{
+    flex: 1 1 100%;
+  }
+  .contact-form{
+    flex: 1 1 80%;
+  }
+  .contact-aside{
+    flex: 1 1 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-header{
+    flex: 0 1 70%;
+  }
+
+  .contact-nav{
+    display: none;
+  }
+
 }
