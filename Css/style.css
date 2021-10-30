@@ -496,11 +496,8 @@ letter-spacing: 2px;
     display: none;
   }
   #hamnav input:checked ~ #hamitems {display: block;}
-
-
 }
   
-
 /*Tickets Css */
 
 .tickets-container{
